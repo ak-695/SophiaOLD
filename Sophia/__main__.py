@@ -75,7 +75,7 @@ def get_readable_time(seconds: int) -> str:
     return ping_time
 
 
-PM_START_TEXT = """Hey there, my name is *Sophia*.\n\nI can help manage your groups with useful features, feel free to add me to your groups!."""
+PM_START_TEXT = """Hey there, my name is *Sinamika*.\n\nI can help manage your groups with useful features, feel free to add me to your groups!."""
 
 buttons = [
     [
@@ -88,18 +88,18 @@ buttons = [
         ),
     ],
     [
-        InlineKeyboardButton(text=" Sophia News 🙋‍♀️ ", url=f"https://t.me/dihanofficial"),
-        InlineKeyboardButton(text=" Support Group 💬 ", url=f"https://t.me/dihan_official"),
+        InlineKeyboardButton(text=" Sinamika News 🙋‍♀️ ", url=f"https://t.me/SinamikaUpdates"),
+        InlineKeyboardButton(text=" Sinamika Group 💬 ", url=f"https://t.me/SinamikaSUPPORTCHAT"),
     ],
     [
-        InlineKeyboardButton(text="➕ Add Sophia to your Group ➕", url="t.me/SophiaSLBot?startgroup=true"),   
+        InlineKeyboardButton(text="➕ Add Sinamika to your Group ➕", url="t.me/Sinamika_Bot?startgroup=true"),   
     ],
 ]
 
 HELP_STRINGS = """
 ✘✘✘ 𝗛𝗲𝗹𝗽𝗳𝘂𝗹 𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀 ✘✘✘
 
-Every possibility of Sophia is documentated here
+Every possibility of Sinamika is documentated here
 Click buttons to get help
 """
 
@@ -351,7 +351,7 @@ def sophia_about_callback(update, context):
     query = update.callback_query
     if query.data == "sophia_":
         query.message.edit_text(
-            text="""  🙋‍♀️ I'm *Sophia*, a powerful group management bot built to help you manage your group easily.
+            text="""  🙋‍♀️ I'm *Sinamika*, a powerful group management bot built to help you manage your group easily.
                  \n* I can restrict users.
                  \n* I can greet users with customizable welcome messages and even set a group's rules.
                  \n* I have an advanced anti-flood system.
@@ -359,16 +359,16 @@ def sophia_about_callback(update, context):
                  \n* I have a note keeping system, blacklists, and even predetermined replies on certain keywords.
                  \n* I check for admins' permissions before executing any command
 
-                 \n[♚ Special Credits] (https://telegra.ph/Special-Credits-08-21)
+                 \n[♚ Special Credits] (https://telegra.ph/Sinamika-04-08)
 
-                \n[💾 Source Code]  (https://github.com/dihanofficial/sophia)
+                \n[unlimited filters bot]  (http://t.me/NickyXbot)
 
-                \n[♕ Dihan Official] (https://github.com/dihanofficial) 
+                \n[♕Sinamika Owner] (http://t.me/SinamikaOwnerBot) 
 
-                \n[📄 Terms And Conditions] (https://telegra.ph/Terms-and-Conditions-08-21)
+                \n[📄 Terms And Conditions] (https://telegra.ph/Sinamika-Terms-and-Conditions-04-08)
 
                 \nLicensed under the GNU Affero General Public Lisence v3.0. 
-                \n© 2020 - 2021 @DihanOfficial. All Rights Reserved """,
+                \n© 2020 - 2021 @SinamikaOwnerBot. All Rights Reserved """,
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
@@ -410,15 +410,15 @@ def Source_about_callback(update, context):
                     InlineKeyboardButton(text=" About Me 🙋‍", callback_data="sophia_"),
                   ],
                   [
-                    InlineKeyboardButton(text=" Source Code 💾", url=f"https://github.com/dihanofficial/sophia"),
+                    InlineKeyboardButton(text="Owner contact", url=f"htthttp://t.me/SinamikaOwnerBot"),
                   ],
                   [
-                    InlineKeyboardButton(text=" Special Credits ❤ ", url=f"https://telegra.ph/Special-Credits-08-21"),
-                    InlineKeyboardButton(text="Terms And Conditions 📄 ", url=f"https://telegra.ph/Terms-and-Conditions-08-21"),
+                    InlineKeyboardButton(text=" Special Credits ❤ ", url=f"https://telegra.ph/Sinamika-04-08"),
+                    InlineKeyboardButton(text="Terms And Conditions 📄 ", url=f"https://telegra.ph/Sinamika-Terms-and-Conditions-04-08"),
                   ],
                   [
-                    InlineKeyboardButton(text="🙋‍ Sophia News ", url=f"https://t.me/dihanofficial"),
-                    InlineKeyboardButton(text="💬 Support Group", url=f"https://t.me/dihan_official"),
+                    InlineKeyboardButton(text="🙋‍ Sinamika News ", url=f"https://t.me/SinamikaUpdates"),
+                    InlineKeyboardButton(text="💬 Sinamika Group", url=f"https://t.me/SinamikaSUPPORTCHAT"),
                   ],
                   [
                     InlineKeyboardButton(text="Commands Help ❓", callback_data="help_back"),
